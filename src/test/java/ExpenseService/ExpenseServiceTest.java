@@ -19,10 +19,10 @@ class ExpenseServiceTest {
     	Project project = new Project(ProjectType.INTERNAL, "");
     	
         // when
-    	ExpenseType projectExpense = ExpenseService.getExpenseCodeByProjectTypeAndName(project);
+    	ExpenseType expenseType = ExpenseService.getExpenseCodeByProjectTypeAndName(project);
     	
         // then
-    	assertEquals(ExpenseType.INTERNAL_PROJECT_EXPENSE, projectExpense);
+    	assertEquals(ExpenseType.INTERNAL_PROJECT_EXPENSE, expenseType);
     }
 
     @Test
